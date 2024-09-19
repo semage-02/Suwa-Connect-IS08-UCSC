@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.main-content{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.header
+{
+    background-color: #197de0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+.data-coloumn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.coloumn{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+   
+    height: 500px;
+    padding: 10px;
+    margin-right: 5px;
+    justify-content:space-evenly ;
+    background-color: #ababab;
+    border-radius: 8px;
+    
+}
+
+
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+ .columnItem{
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+ .columnItem input{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+ }
+
+    .columnItem label{
+        font-size: 18px;
+        
+    }
+
+ #bio{
+    width: 200px;
+    height: 200px;
+ }
+
+ .updateButton{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+ }
+
+ .updateButton button{
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    background-color: #197de0;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+    .updateButton button:hover{
+        background-color: #2599e7;
+        transition:0.5S;
+    }

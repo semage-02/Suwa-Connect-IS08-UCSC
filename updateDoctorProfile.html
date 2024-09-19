@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Doctor Profile</title>
+    <link rel="stylesheet" href="updateDoctorProfile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="navbar"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("navBar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navbar:', error));
+            });
+        </script>
+
+        <div class="main-content">
+            <div class="header">
+                <h1>My profile</h1>
+            </div>
+            <div class="data-coloumn">
+                <div class="coloumn">
+                    <div class="name">
+                        <div class="columnItem">
+                            <label for="firstName">First name:</label>
+                            <input type="text" id="firstName" name="firstName" value="Dr. Kim">
+                        </div>
+                        <div class="columnItem">
+                            <label for="lastName">Last name:</label>
+                            <input type="text" id="lastName" name="lastName" value="Dr. Kim">
+                        </div>
+
+                    </div>
+
+                    <div class="columnItem" >
+                            <label for="email">email:</label>
+                            <input type="email" id="email" name="email" value="Dr. Kim">
+                    </div>
+
+                    <div class="columnItem">
+                        <label for="bio">add a bio:</label>
+                        <input type="bio" id="bio" name="bio" value="max no: of characters 200">
+                    </div>
+
+                    <div class="columnItem">
+                        <label>Affliated hospitals:</label>
+                        <input type="text" id="place1" name="place1" value="place 1">
+                        <input type="text" id="place2" name="place2" value="place 2">
+                        <input type="text" id="place3" name="place3" value="place 3">
+                    </div>
+
+                    
+
+                    <div class="columnItem">
+                        <label for="telephone">Telephone:</label>
+                        <input type="text" id="telephone" name="telephone" value="0718080658">
+                    </div>
+
+
+
+                    </div>
+
+                    <div class="coloumn">
+
+                        <div class="columnItem">
+                            <label>specialities:</label>
+                            <input type="text" id="speciality1" name="speciality1" value="speciality1">
+                            <input type="text" id="speciality2" name="speciality2" value="speciality2">
+                            <input type="text" id="speciality3" name="speciality3" value="speciality3">
+                        </div>
+
+                        <div class="columnItem">
+                            <label for="password">new password:</label>
+                            <input type="password" id="password" name="password" value="password">
+                        </div>
+
+                        <div class="columnItem">
+                            <label for="newpassword">confirm new password:</label>
+                            <input type="password" id="newpassword" name="newpassword" value="newpassword">
+                        </div>
+
+                        <div class="columnItem">
+                            <label for="consultationFees">Consultation fee:</label>
+                            <input type="number" id="consultationFees" name="consultationFees" value="0.00">
+                        </div>
+
+                        <div class="columnItem">
+                            <label for="medicalLicense">Medical license no::</label>
+                            <input type="text" id="medicalLicense" name="medicalLicense" value="1NF7432767">
+                        </div>
+
+                        <div class="columnItem">
+                            <label>clinic address:</label>
+                            <input type="text" id="street" name="street" value="street">
+                            <input type="text" id="city" name="city" value="city">
+                            <input type="text" id="state" name="state" value="state">
+                        </div>
+    
+                    </div>
+                    
+                </div>
+                <div class="updateButton">
+                
+                    <button type="button" onclick="window.location.href='doctor_homepage.html';">Update</button>
+    
+                </div>  
+
+            </div>
+            
+
+        </div>
+    </div>
+        
+        
+    
+</body>
+</html>

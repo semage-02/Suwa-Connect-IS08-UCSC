@@ -1,0 +1,136 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* light blue */
+    color: #333;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.header-left h1 {
+    color: #333;
+}
+
+.header-left h2 {
+    color: #666;
+}
+
+.header-right img {
+    width: 100px;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="telephone"],
+.form-group input[type="speciality"],
+.form-group input[type="file"] {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="telephone"]:focus,
+.form-group input[type="speciality"]:focus,
+.form-group input[type="file"]:focus {
+    border-color: #4da6ff; /* light blue for focused input */
+    outline: none;
+}
+
+.form-submit-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-submit-button input[type="submit"] {
+    background-color: #4da6ff; /* light blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-button input[type="submit"]:hover {
+    background-color: #3399ff;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-right img {
+        margin-top: 20px;
+    }
+}
