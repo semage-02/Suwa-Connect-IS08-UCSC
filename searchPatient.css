@@ -60,9 +60,9 @@ body{
     
     margin-left: 150px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* height: 100%; */
-    align-items: flex-start;
+    
     padding: 15px;
 
 }
@@ -84,13 +84,36 @@ body{
     
 }
 
+.searchbarAndProfile{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1080px;
+    margin-top: 20px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 
 .searchbar{
     padding: 5px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
+    margin-left: 40px;
+    margin-top: 10px;
     
 
 }
@@ -117,31 +140,121 @@ body{
 .patientList{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin-top: 50px;
+    /* padding-left: 40px;
+    padding-top: 80px; */
     width: 100%;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    /* margin-top: 0px; */
+    /* position: relative; */
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    
 }
 
-.patient{
+#patient-details{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    background-color: #e5e7ea;
+    /* background-color: #e5e7ea; */
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     width: 80%;
+    margin-left: 30px;
 }
 
 .patient img{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin: 20px;
+    margin-left: 30px;
+    
+}
+
+.patient{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    background-color: #e5e7ea;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    height: 90px;
+    
+    
+}
+
+.patient_id{
+margin-left: 80px;
+padding: 5px;
+width: 100px;
+
+}
+
+.patient-name{
+    margin-left: 80px;
+    width: 200px;
+    white-space: nowrap;
+
+}
+
+.patient-age{
+    margin-left: 80px;
+    white-space: nowrap;
+    width: 100px;
+
+}
+
+.request-access-btn{
+    margin-left: 100px;
+    
+    
+
+}
+
+.request-access-btn button{
+    width: 150px;
+    border: none;
+    color: #ffffff;
+    background-color: #197de0;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer; 
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.request-access-btn button:hover {
+    background-color: #4972ec;
+    color: #fff;               
+}
+
+.visit-profile-btn{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.visit-profile-btn button{
+    width: 120px;
+    border: none;
+    color: #ffffff;
+    background-color: #197de0;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer; 
+    font-size: 17px;
+}
+
+.visit-profile-btn button:hover {
+    background-color: #4972ec;
+    color: #fff;               
 }
