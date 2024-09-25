@@ -3,20 +3,6 @@ body {
     overflow-x: auto;
     }
 
-.container {
-    margin-left: 250px; /* To make space for the sidebar */
-    padding: 20px;
-    width: calc(100% - 250px); 
-    overflow-y: auto;
-    background-color: #e6f2ff;
-    color: #2e2e2e;
-
-    }
-
-header {
-    padding: 20px;
-    }
-
 
 /* Search and Filter Section */
 .search-filter-section {
