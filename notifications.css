@@ -1,0 +1,132 @@
+body{
+    padding:0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    padding:0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-content{
+    margin-left: 150px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    overflow-y: auto;
+
+}
+
+.titleBar{
+    display: flex;
+    flex-direction: row;
+    width: 89%;
+    height: 80px;
+    background-color:#197de0;
+    align-items: center;
+    border-radius: 8px;
+    position: fixed;
+    
+    
+
+}
+
+.title{
+width: 80%;
+
+}
+
+.title p{
+    font-size: 40px;
+    margin-left: 20% ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.profile{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    margin-left:20px ;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.name p{
+    font-size: 25px;
+    color: white;
+}
+
+.notification{
+    height: 100vh;
+    width: 98.5%;
+    /* border: solid black 2px; */
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #a7acb1;
+    justify-content: center;
+    border-radius: 8px;
+    overflow-y: auto;
+    
+    
+   
+   
+}
+
+.notification-row{
+width: 100%;
+display: flex;
+flex-direction: row;
+background-color: white;
+border-radius: 8px;
+margin-bottom: 10px;
+
+}
+
+.notification-row p{
+    font-size: 18px;
+}
+
+.date{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.time{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+
+.message{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
