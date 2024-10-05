@@ -11,21 +11,45 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="sidebar">
+      <!-- <div class="sidebar">
+        <div class="logo">
+          <img src="./images/Suwa-Connect Logo.png" alt="logo" />
+        </div>
+          <hr>
+      <div class="icons">
         <li><img src="./images/menu.png" alt="icon" /> <a href="searchPatient.html"></a></li>
-        <li><img src="./images/calendar.png" alt="icon" /><a href=""></a></li>
+        <li><img src="./images/man.png" alt="icon" /><a href=""></a></li>
         <li><img src="./images/message.png" alt="icon" /><a href=""></a></li>
         <li><img src="./images/time.png" alt="icon" /><a href=""></a></li>
         <li><a href="updateDoctorProfile.html"><img src="./images/setting.png" alt="icon" /></a></li>
         <li><img src="./images/left-arrow.png" alt="icon" /><a href=""></a></li>
       </div>
+
+    </div> -->
+    <div id="navbar"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navBar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+
+
       <div class="main-content">
         <div class="left_container">
-                    <div class="searchBar">
-                      <button type="menu" onclick="">search patient...</button>
-                        <!-- <input type="search" placeholder="Search patient..." aria-label="Search" />
-                        <button type="submit"><img src="magnifying-glass.png" alt="icon"></button> -->
-                    </div>
+                    <!-- <div class="searchBar">
+                      <button type="menu" onclick="goToSearchPage()">search patient...</button>
+                      <script>
+                        function goToSearchPage() {
+                            window.location.href = "searchPatient.html";  
+                        }
+                    </script>
+                        <button type="submit"><img src="magnifying-glass.png" alt="icon"></button> 
+                    </div> -->
 
                     <div class="doctorName">
                         Good morning  <span id="username">Dr.Kim!</span>
@@ -44,7 +68,7 @@
                                     </div>
                                     <div class="statistics-percentage-right">
                                       old patients
-                                      <span id="old patients">64</span>
+                                      <span id="old-patients">64</span>
                                     </div>
                                 </div>
                               </div>
@@ -57,23 +81,98 @@
                             </div>
                           <div class="left_bottom">
 
-                            <div class="patientList">
+                            <!-- <div class="patientList">
                               <div class="patientList-header">
                                 <h2>Patient list</h2>
                                 <h3>today</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rerum. Ex nesciunt dignissimos unde! Reiciendis ducimus vel aspernatur sed autem a. Eum quia deleniti, voluptatum aliquam quos ex ea vel?</p>
+                                <p></p>
+                              </div>
+                              <div class="patientListBody">
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
+                                <h2>manilka</h2>
                               </div>
                               
                               
 
+                            </div> -->
+
+                            <div class="patientList">
+                              <div class="patientList-header">
+                                <div class="column-header">Patient List</div>
+                                <div class="column-header">Today</div>
+                              </div>
+                              <div class="patientListBody">
+                                <div class="patient-name">John Doe</div>
+                                <div class="today-appointment">10:00 AM</div>
+                            
+                                <div class="patient-name">Jane Smith</div>
+                                <div class="today-appointment">10:30 AM</div>
+                            
+                                <div class="patient-name">Mike Johnson</div>
+                                <div class="today-appointment">11:00 AM</div>
+                            
+                                <div class="patient-name">Anna Williams</div>
+                                <div class="today-appointment">11:30 AM</div>
+
+                                <div class="patient-name">Chris Evans</div>
+                                <div class="today-appointment">12:00 PM</div>
+                            
+                                <div class="patient-name">Sophia Brown</div>
+                                <div class="today-appointment">12:30 PM</div>
+                            
+                                <div class="patient-name">Liam Davis</div>
+                                <div class="today-appointment">1:00 PM</div>
+                            
+                                <div class="patient-name">Emily Clark</div>
+                                <div class="today-appointment">1:30 PM</div>
+                              </div>
                             </div>
-                            <div class="consultations">
+
+                            <!-- <div class="consultations">
                               <div class="consultations-header">
                                 <h2>Consultations</h2>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a optio temporibus minima ratione aspernatur omnis veniam, nisi dolore iste aperiam fugiat sequi, veritatis distinctio? Consequuntur molestias placeat sequi asperiores.</p>
                               
                               </div>
                               
+                            </div> -->
+
+                            <div class="consultations">
+                              <div class="consultations-header">
+                                <div class="column-header">Patient Name</div>
+                                <div class="column-header">Status</div>
+                              </div>
+                              <div class="consultations-body">
+                                <!-- Row 1 -->
+                                <div class="patient-name">Mike Johnson</div>
+                                <div class="consultation-status">Completed</div>
+                            
+                                <!-- Row 2 -->
+                                <div class="patient-name">Anna Williams</div>
+                                <div class="consultation-status">Pending</div>
+                            
+                                <!-- Row 3 -->
+                                <div class="patient-name">John Doe</div>
+                                <div class="consultation-status">In Progress</div>
+
+                                <div class="patient-name">Mike Johnson</div>
+                                <div class="consultation-status">Completed</div>
+                            
+                                <!-- Row 2 -->
+                                <div class="patient-name">Anna Williams</div>
+                                <div class="consultation-status">Pending</div>
+                            
+                                <!-- Row 3 -->
+                                <div class="patient-name">John Doe</div>
+                                <div class="consultation-status">In Progress</div>
+                            
+                                <!-- Add more rows as necessary -->
+                              </div>
                             </div>
 
                             
@@ -84,7 +183,7 @@
 
           <div class="logged-in">
             <div class="logged-in-header">
-              <h4>Name</h4>
+              <h4>manilka</h4>
             </div>
             <div class="logged-in-image">
               <img src="./images/profile.png" alt="user icon">
@@ -114,7 +213,7 @@
         </div>
 
         <div class="upcoming">
-          <div class="upcoming-header">
+          <!-- <div class="upcoming-header">
             <h2>Upcoming</h2>
           </div>
           <div class="upcoming-content">
@@ -124,7 +223,45 @@
             <div class="upcoming-list-time">
               <h4>9.00AM</h4>
             </div>
+
+            
           
+          </div> -->
+
+          <div class="upcoming-header">
+            <h2>Upcoming</h2>
+          </div>
+          <div class="upcoming-content">
+            <!-- Event 1 -->
+            <div class="upcoming-list"> 
+              <h4>Doctors Meet</h4>
+            </div>
+            <div class="upcoming-list-time">
+              <h4>9:00 AM</h4>
+            </div>
+        
+            <!-- Event 2 -->
+            <div class="upcoming-list"> 
+              <h4>Patient Follow-up</h4>
+            </div>
+            <div class="upcoming-list-time">
+              <h4>11:00 AM</h4>
+            </div>
+        
+            <!-- Event 3 -->
+            <div class="upcoming-list"> 
+              <h4>Annual Health Check-up</h4>
+            </div>
+            <div class="upcoming-list-time">
+              <h4>2:00 PM</h4>
+            </div>
+
+            <div class="upcoming-list"> 
+              <h4>Annual Health Check-up</h4>
+            </div>
+            <div class="upcoming-list-time">
+              <h4>2:00 PM</h4>
+            </div>
           </div>
         </div>
                      

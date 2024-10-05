@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: poppins sans-serif;
 }
 
 .wrapper{
@@ -20,15 +21,53 @@ body{
 
 .header
 {
-    background-color: #197de0;
+    /* background-color: #197de0; */
     height: 100px;
     width: 100%;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
+   
+    display: flex;
+    flex-direction: row;
+    margin-left:0.1%;
+    text-wrap: nowrap;
+    font-family: poppins sans-serif;
+    font-size: 45px;
+    align-items: center;
+   
    
 }
+
+.header img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.header p{
+    margin-left: 20px;
+}
+
+.profile{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-left: 45%;
+font-size: 20px;
+}
+
+.profile p{
+    margin-left: 10px;
+    text-wrap:nowrap ;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+}
+
+
 
 .data-coloumn{
     display: flex;
@@ -47,8 +86,9 @@ body{
     padding: 10px;
     margin-right: 5px;
     justify-content:space-evenly ;
-    background-color: #ababab;
+    background-color: #2599e7;
     border-radius: 8px;
+    font-family: poppins sans-serif;
     
 }
 

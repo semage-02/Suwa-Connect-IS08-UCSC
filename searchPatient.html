@@ -8,14 +8,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="sidebar">
-            <li><a href="doctor_homepage.html"><img src="./images/menu.png" alt="icon" /> </a></li>
-            <li><img src="./images/calendar.png" alt="icon" /><a href=""></a></li>
-            <li><img src="./images/message.png" alt="icon" /><a href=""></a></li>
-            <li><img src="./images/time.png" alt="icon" /><a href=""></a></li>
-            <li><img src="./images/setting.png" alt="icon" /><a href=""></a></li>
-            <li><img src="./images/left-arrow.png" alt="icon" /><a href=""></a></li>
-        </div>
+        <div id="navbar"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("navBar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navbar:', error));
+            });
+        </script>
         <div class="main-content">
             <div class="searchbarAndProfile">
                 <div class="searchbar">

@@ -15,7 +15,7 @@ body{
 .main-content{
     margin-left: 150px;
     width: 100%;
-    padding: 5px;
+    /* padding: 5px; */
     display: flex;
     flex-direction:column;
     height: 100%;
@@ -26,34 +26,44 @@ body{
 .titleBar{
     display: flex;
     flex-direction: row;
-    width: 89%;
+    width: 100%;
     height: 80px;
-    background-color:#197de0;
+    background-color:#ffffff;
     align-items: center;
-    border-radius: 8px;
-    position: fixed;
-    
+    overflow-y: hidden;
+   
+    }
+
     
 
+     .title{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 }
 
-.title{
-width: 80%;
-
+.title img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10%;
+    
 }
 
 .title p{
+    
     font-size: 40px;
-    margin-left: 20% ;
+    margin-left: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: #6879d0;
 }
 
 .profile{
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 10%;
 
 }
 
@@ -69,19 +79,20 @@ width: 80%;
 
 .name p{
     font-size: 25px;
-    color: white;
+    color: #75bfec;
 }
 
 .notification{
     height: 100vh;
     width: 98.5%;
     /* border: solid black 2px; */
-    margin-top: 80px;
+    /* margin-top: 80px; */
     padding: 10px;
     background-color: #a7acb1;
     justify-content: center;
     border-radius: 8px;
     overflow-y: auto;
+    display: none;
     
     
    
