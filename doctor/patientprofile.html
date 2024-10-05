@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient profile</title>
+    <link rel="stylesheet" href="patientProfile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="navbar"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("navBar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navbar:', error));
+            });
+        </script>
+
+        <div class="main-content">
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="./images/profile.png" alt="profile-pic">
+                </div>
+                <div class="profile-info">
+                    
+                        <h3>name: <span>manilka anupama</span></h3>
+                        <h3>Age: <span>23 years</span></h3>
+                        <h3>gender: <span>male</span></h3>
+                        <h3>contact: <span>076-5565520</span></h3>
+                       
+                </div> 
+                <div class="buttons">                        <button>prescriptions</button>
+                    <button>reports</button>
+                </div>
+            </div>
+
+
+            <div class="records">
+                    <div class="new-record">
+                        <h3>click here to add new patient record</h3>
+                        <button><img src="images/add.png" alt=""></button>
+                        
+                    </div>
+            </div>
+         </div>
+         
+         
+
+    </div>
+
+</body>
+</html>
