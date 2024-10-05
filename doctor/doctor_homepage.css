@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+      
+}
+
+.wrapper{
+    background-color: #ffffff;
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+
+
+/* .sidebar{
+    position: fixed;
+    width: 150px;
+    height: 100vh;
+    background:#3479e9;
+     padding: 10px; 
+    
+    justify-items: center;
+
+
+}
+
+
+
+.logo{
+    display: flex;
+   margin-top: 20px;
+}
+
+.logo img{
+    width: 80%;
+    height: 80%;
+}
+
+.icons{
+    margin-top: 20%;
+    padding-left: 20%;
+}
+
+.sidebar li{
+    padding: 20px;
+}
+
+.sidebar hr{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+
+.sidebar li img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.sidebar li img:hover {
+    transform: scale(2.0); 
+    opacity: 0.8; 
+    transform: scale(1.1); 
+    opacity: 0.8; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+} */
+
+.main-content{
+    
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+    /* align-items: flex-start; */
+
+}
+
+.searchBar button{
+    background-color: #3479e9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    width: 60%;
+    height: 33px;
+    font-size: 15px;
+    
+}
+
+
+.searchBar{
+    padding: 20px;
+    
+
+}
+
+/* .searchBar input{
+width: 500px;
+height: 33px;
+background-color: #d5dfe9;
+border-top-left-radius: 8px;
+border-bottom-left-radius:8px ;
+border: none;
+text-align: center;
+
+
+} */
+
+/* .searchBar button{
+    margin-left: -5px;
+    height: 33px;
+    width: 50px;
+    background-color: #d5dfe9;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: none;
+
+} */
+
+/* .searchBar button[type="submit"]:hover {
+    background-color: #dfe5eb;
+    transform: scale(1.05); 
+} */
+
+/* .searchBar button img{
+    width:12px;
+    height: 12px;;
+} */
+
+.doctorName{
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+
+    
+}
+
+#username{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0d00f4;
+    font-size:28px ;
+}
+
+
+.left_container{
+    /* border: 5px solid; */
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 360px;
+
+}
+
+
+.left_bottom{
+    height: 400px;
+    /* background-color: rgb(226, 229, 229); */
+    width: 950px;
+    margin-left: 0px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.statistics{
+display: flex;
+flex-direction: row;
+width: 950px;
+height: 200px;
+/* background: linear-gradient(90deg, #a9c2ef, #3479e9); */
+background:#3479e9;
+
+margin: 20px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+
+}
+
+.statistics-image {
+    margin-left:50px ;
+    width: 400px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    display: flex;
+    align-items: center; /* Vertically align the image inside its container */
+    justify-content: center; /* Horizontally align the image inside its container */
+}
+
+.statistics img{
+    margin-bottom: 40px;
+    margin-left: 50px;
+    width: 250px;
+    height: 300px;
+
+}
+
+.statistics_numbers{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    height: 200px;
+}
+
+.statistics_numbers_head{
+    text-align: center;
+    width: 500px;
+    height: 80px;
+    color: #ffffff;
+}
+
+.statistics_numbers_head h3{
+    padding-top:10px ;
+    /* margin-left: 200px; */
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.statistics_numbers_head span{
+    /* margin-left: 240px; */
+    font-size: 25px;
+}
+
+.statistics-percentage{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    height:120px ;
+    width:500 ;
+}
+
+.statistics-percentage-left{
+    margin-left: 30px;
+font-size: 17px;
+border-radius: 5px;
+background-color: #ffffff;    
+text-align: center;
+padding-top: 30px;
+width: 400px;
+height:110px;
+padding-bottom: 5px;
+}
+
+.statistics-percentage-right{
+font-size: 17px;
+border-radius: 5px;
+background-color: #ffffff;
+text-align: center;    
+padding-top: 30px;
+margin-left: 250px;
+width: 400px;
+height:110px;
+padding-bottom:5px ;
+}
+
+.patientList {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    background-color: #50abe7;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.patientList-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: bold;
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .column-header {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  
+  .patientListBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: Patient Name and Today's Appointment */
+    /* gap: 10px; */
+    border-radius: 50px;
+    
+  }
+  
+  .patient-name, .today-appointment {
+    padding: 10px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .patient-name {
+    text-align: left;
+  }
+  
+  .today-appointment {
+    text-align: right;
+  }
+  
+  .patient-name:hover, .today-appointment:hover {
+    background-color: #e0f7fa;
+  }
+
+/* .patientList-header{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.patientList-header h2{
+    margin-left: 10%;
+}
+
+.patientList-header h3{
+    font-weight: bold;
+    margin-left: 45%;
+    color: #1308e2e3;
+    padding: 5px;
+} */
+
+
+
+.consultations{
+    margin-left: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: #50abe7;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    height: 100%;
+    padding: 10px;
+}
+
+.consultations-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: Patient Name and Status */
+    font-weight: bold;
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .column-header {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  
+  .consultations-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: Patient Name and Status */
+    /* gap: 10px; */
+  }
+  
+  .patient-name, .consultation-status {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .patient-name {
+    text-align: left;
+  }
+  
+  .consultation-status {
+    text-align: right;
+  }
+  
+  .patient-name:hover, .consultation-status:hover {
+    background-color: #e0f7fa;
+  }
+
+/* .consultations-header{
+    text-align: center;
+    font-size: 15px;
+} */
+
+
+.calendar {
+    width: 95%;
+    background: #b0c6dfa9;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.calendar-header h3 {
+    font-size: 20px;
+    margin: 0;
+    
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.day-header {
+    font-weight:lighter; 
+    color: #4f8fe9;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.day:hover {
+    background-color: #ddd;
+}
+
+.current-day {
+    background-color: #4f8fe9;
+    color: white;
+    border-radius: 8px;
+}
+
+/* .marked-day {
+    background-color: red;
+    color: white;
+} */
+
+/* button:focus {
+    outline: none;
+} */
+
+.right_container{
+    /* border: 5px solid;
+    border-color: blue; */
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 370px;
+    padding-top: 1%; 
+    
+}
+
+.upcoming{
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 95%;
+    background-color: #669fff;
+    padding: 10px;
+    
+
+}
+
+.upcoming-header {
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .upcoming-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .upcoming-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: Event and Time */
+    /* gap: 10px; */
+    /* padding: 10px 0; */
+  }
+  
+  .upcoming-list, .upcoming-list-time {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .upcoming-list {
+    text-align: left;
+  }
+  
+  .upcoming-list-time {
+    text-align: right;
+  }
+  
+  .upcoming-list:hover, .upcoming-list-time:hover {
+    background-color: #e0f7fa;
+  }
+
+/* .upcoming-header{
+    margin: 5%;
+    color: #ffffff;
+}
+
+.upcoming-content{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.upcoming-list{
+color: #05f64a;
+}
+
+
+.upcoming-list-time{
+    margin-left: 30%;
+} */
+
+
+.logged-in{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.logged-in-header{
+    margin-left: 30%;
+}
+
+.logged-in-header h4{
+    font-size: 20px;
+}
+
+.logged-in-image{
+    margin-left: 5%;
+}
+
+.logged-in-image img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .left_container, .right_container {
+        width: 100%;
+    }
+
+    .statistics {
+        flex-direction: column;
+    }
+
+    .statistics-image img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .calendar{
+        margin-top: 80px;
+    }
+
+    .calendar-header, .upcoming-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .upcoming-list, .upcoming-list-time {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .doctorName {
+        font-size: 1rem;
+    }
+
+    .statistics_numbers h3 {
+        font-size: 0.9rem;
+    }
+
+    .statistics_numbers span {
+        font-size: 1.1rem;
+    }
+
+    .calendar-header h3 {
+        font-size: 1rem;
+    }
+
+    .upcoming-list h4, .upcoming-list-time h4 {
+        font-size: 0.8rem;
+    }
+}
+
+
+#visitsForToday{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+#new-patients{
+    font-size: 40px;
+    color: #05f64a;
+}
+
+#old-patients{
+    font-size: 40px;
+    color: #ee0b0b;
+}
