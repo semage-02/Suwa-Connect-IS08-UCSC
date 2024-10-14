@@ -1,0 +1,175 @@
+
+body{
+margin: 5px;
+padding: 10px;
+font-family: poppins;
+background: linear-gradient(90deg, #a9c2ef, #3479e9);
+
+
+}
+
+
+
+.main-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    
+    
+}
+
+.header-left h1{
+    font-size: 50px;
+    /* font-weight: bold; */
+    margin-left: 50px;
+    margin-top: 5px;
+    color: rgb(60, 12, 231);
+    
+}
+
+
+.header-left h2{
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: -20px;
+}
+
+
+.header-right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
+
+.header-right img{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.form-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10%;
+    }
+
+
+.form-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 100px;
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+
+
+.form-group label{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.form-group input{
+    margin-right: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    width: 50%;
+}
+
+
+
+#file{
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: white;
+    
+}
+
+.form-submit-button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.form-submit-button input{
+    width: 40%;
+    height: 40px;
+    background-color: #513bf8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s; ;
+}
+
+.form-submit-button input:hover{
+    background-color: #357fe6;
+
+}
+
+.form-submit-button a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+#signIn{
+    margin-top: 10px;
+    text-decoration:solid;
+    color: rgb(50, 34, 227);
+    font-size: 15px;
+    font-weight: bold;
+    
+}
