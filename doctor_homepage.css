@@ -11,6 +11,7 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
     
       
 }
@@ -21,75 +22,14 @@ body{
     position: relative;
     flex-direction: row;
     width: 100%;
-
 }
-
-
-
-/* .sidebar{
-    position: fixed;
-    width: 150px;
-    height: 100vh;
-    background:#3479e9;
-     padding: 10px; 
-    
-    justify-items: center;
-
-
-}
-
-
-
-.logo{
-    display: flex;
-   margin-top: 20px;
-}
-
-.logo img{
-    width: 80%;
-    height: 80%;
-}
-
-.icons{
-    margin-top: 20%;
-    padding-left: 20%;
-}
-
-.sidebar li{
-    padding: 20px;
-}
-
-.sidebar hr{
-    width: 100%;
-    margin-top: 30px;
-}
-
-
-
-
-.sidebar li img {
-    width: 25px;
-    height: 25px;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
-}
-
-.sidebar li img:hover {
-    transform: scale(2.0); 
-    opacity: 0.8; 
-    transform: scale(1.1); 
-    opacity: 0.8; 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-} */
 
 .main-content{
     
     margin-left: 150px;
     display: flex;
     flex-direction: row;
-    /* height: 100%; */
-    /* align-items: flex-start; */
-
-}
+    }
 
 .searchBar button{
     background-color: #3479e9;
@@ -102,49 +42,11 @@ body{
     width: 60%;
     height: 33px;
     font-size: 15px;
-    
-}
-
+    }
 
 .searchBar{
     padding: 20px;
-    
-
-}
-
-/* .searchBar input{
-width: 500px;
-height: 33px;
-background-color: #d5dfe9;
-border-top-left-radius: 8px;
-border-bottom-left-radius:8px ;
-border: none;
-text-align: center;
-
-
-} */
-
-/* .searchBar button{
-    margin-left: -5px;
-    height: 33px;
-    width: 50px;
-    background-color: #d5dfe9;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    border: none;
-
-} */
-
-/* .searchBar button[type="submit"]:hover {
-    background-color: #dfe5eb;
-    transform: scale(1.05); 
-} */
-
-/* .searchBar button img{
-    width:12px;
-    height: 12px;;
-} */
+    }
 
 .doctorName{
     margin-top: 10px;
@@ -152,8 +54,6 @@ text-align: center;
     font-size: 27px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10%;
-
-    
 }
 
 #username{
@@ -168,16 +68,14 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 1000px;
-    height: 360px;
+    /* height: 360px; */
 
 }
 
 
 .left_bottom{
-    height: 400px;
-    /* background-color: rgb(226, 229, 229); */
+
     width: 950px;
-    margin-left: 0px ;
     display: flex;
     flex-direction: row;
 }
@@ -187,12 +85,12 @@ display: flex;
 flex-direction: row;
 width: 950px;
 height: 200px;
-/* background: linear-gradient(90deg, #a9c2ef, #3479e9); */
 background:#3479e9;
+margin: 20px 20px 20px 10px;
+border-radius: 8px;
 
-margin: 20px;
-border-top-right-radius: 8px;
-border-bottom-right-radius: 8px;
+box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -274,15 +172,17 @@ padding-bottom:5px ;
 
 .patientList {
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
+    height: 450px;
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
     margin-left: 10px;
-    background-color: #50abe7;
-    height: 100%;
+    background-color: #3479e9;
     border-radius: 10px;
     padding: 10px;
+    box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .patientList-header {
@@ -306,6 +206,7 @@ padding-bottom:5px ;
     /* gap: 10px; */
     border-radius: 50px;
     
+    
   }
   
   .patient-name, .today-appointment {
@@ -313,6 +214,8 @@ padding-bottom:5px ;
     background-color: #fafafa;
     border-bottom: 1px solid #ddd;
     font-size: 16px;
+    display: flex;
+    justify-content: center; 
   }
   
   .patient-name {
@@ -327,35 +230,21 @@ padding-bottom:5px ;
     background-color: #e0f7fa;
   }
 
-/* .patientList-header{
-    
-    display: flex;
-    flex-direction: row;
 
-}
-
-.patientList-header h2{
-    margin-left: 10%;
-}
-
-.patientList-header h3{
-    font-weight: bold;
-    margin-left: 45%;
-    color: #1308e2e3;
-    padding: 5px;
-} */
 
 
 
 .consultations{
     margin-left: 10px;
     width: 50%;
-    height: 100%;
-    background-color: #50abe7;
+    height: 450px;
+    background-color: #3479e9;
     border-radius: 10px;
     /* border: 1px solid black; */
-    height: 100%;
+    
     padding: 10px;
+    box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .consultations-header {
@@ -383,6 +272,8 @@ padding-bottom:5px ;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     font-size: 16px;
+    display: flex;
+    justify-content: center; 
   }
   
   .patient-name {
@@ -408,7 +299,8 @@ padding-bottom:5px ;
     background: #b0c6dfa9;
     padding: 20px;
     border-radius: 10px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .calendar-header {
@@ -442,7 +334,7 @@ padding-bottom:5px ;
 
 .day-header {
     font-weight:lighter; 
-    color: #4f8fe9;
+    color: #3479e9;
 }
 
 .day {
@@ -459,23 +351,13 @@ padding-bottom:5px ;
 }
 
 .current-day {
-    background-color: #4f8fe9;
+    background-color: #3479e9;
     color: white;
     border-radius: 8px;
 }
 
-/* .marked-day {
-    background-color: red;
-    color: white;
-} */
-
-/* button:focus {
-    outline: none;
-} */
 
 .right_container{
-    /* border: 5px solid;
-    border-color: blue; */
     display: flex;
     flex-direction: column;
     height: 1000px;
@@ -488,8 +370,11 @@ padding-bottom:5px ;
     border-radius: 10px;
     margin-top: 5%;
     width: 95%;
-    background-color: #669fff;
+    background-color: #3479e9;
     padding: 10px;
+    box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+    height: 330px;
+
     
 
 }
@@ -518,6 +403,7 @@ padding-bottom:5px ;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     font-size: 16px;
+    
   }
   
   .upcoming-list {
@@ -531,26 +417,6 @@ padding-bottom:5px ;
   .upcoming-list:hover, .upcoming-list-time:hover {
     background-color: #e0f7fa;
   }
-
-/* .upcoming-header{
-    margin: 5%;
-    color: #ffffff;
-}
-
-.upcoming-content{
-    display: flex;
-    flex-direction: row;
-    margin: 5%;
-}
-
-.upcoming-list{
-color: #05f64a;
-}
-
-
-.upcoming-list-time{
-    margin-left: 30%;
-} */
 
 
 .logged-in{
@@ -602,6 +468,8 @@ color: #05f64a;
 
     .calendar{
         margin-top: 80px;
+        box-shadow:  10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+
     }
 
     .calendar-header, .upcoming-content {

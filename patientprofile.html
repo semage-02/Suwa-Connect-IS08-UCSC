@@ -7,46 +7,97 @@
     <link rel="stylesheet" href="patientProfile.css">
 </head>
 <body>
+    <div id="navbar"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navBar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
     <div class="wrapper">
-        <div id="navbar"></div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("navBar.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("navbar").innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading navbar:', error));
-            });
-        </script>
+        
+       
 
-        <div class="main-content">
-            <div class="profile">
-                <div class="profile-pic">
-                    <img src="./images/profile.png" alt="profile-pic">
+        <div class="profile">
+            <div class="image"><img src="images/profile.png" alt=""></div>
+            <div class="info">
+                <div class="info-item">
+                    <div class="label"><p>Name:</p></div>
+                    <div class="field"><p>manilka Anupama</p></div>
                 </div>
-                <div class="profile-info">
-                    
-                        <h3>name: <span>manilka anupama</span></h3>
-                        <h3>Age: <span>23 years</span></h3>
-                        <h3>gender: <span>male</span></h3>
-                        <h3>contact: <span>076-5565520</span></h3>
-                       
-                </div> 
-                <div class="buttons">                        <button>prescriptions</button>
-                    <button>reports</button>
+                <div class="info-item">
+                    <div class="label"><p>Age:</p></div>
+                    <div class="field"><p>34 years</p></div>
                 </div>
-            </div>
+                <div class="info-item">
+                    <div class="label"><p>e-mail:</p></div>
+                    <div class="field"><p>manilka@gmail.com</p></div>
+                </div>
+                <div class="info-item">
+                    <div class="label"><p>Address:</p></div>
+                    <div class="field"><p>kudugalwatte,ratnapura</p></div>
+                </div>
 
+                
 
-            <div class="records">
-                    <div class="new-record">
-                        <h3>click here to add new patient record</h3>
-                        <button><img src="images/add.png" alt=""></button>
-                        
-                    </div>
             </div>
-         </div>
+            <div class="button-palette">
+                <button class="button" id="reports"> see all reports</button>
+                <button class="button" id="prescriptions">see all prescriptions</button>
+                <button class="button" id="records">see all records</button>
+                
+              
+            </div>
+           
+        </div>
+
+        <div class="general-info">
+
+            <div class="container">
+
+                <div class="item">
+                    <div class="label"><p>blood group:</p></div>
+                    <div class="field"><p>AB+</p></div>
+                </div>
+
+                <div class="item">
+                    <div class="label"><p>height:</p></div>
+                    <div class="field"><p>5.6</p></div>
+                </div>
+
+                <div class="item">
+                    <div class="label"><p>weight:</p></div>
+                    <div class="field"><p>84KG</p></div>
+                </div>
+
+                <div class="item">
+                    <div class="label"><p>allergies:</p></div>
+                    <div class="field"><p></p></div>
+                </div>
+
+                <div class="item">
+                    <div class="label"><p>surgeries:</p></div>
+                    <div class="field"><p></p></div>
+                </div>
+
+                <div class="item">
+                    <div class="label"><p>Gender:</p></div>
+                    <div class="field"><p>Male</p></div>
+                </div>
+
+                
+
+            
+
+            
+            
+        </div>
+
+        
          
          
 
