@@ -46,56 +46,50 @@
 
             </div>
             <div class="button-palette">
-                <button class="button" id="reports"> see all reports</button>
-                <button class="button" id="prescriptions">see all prescriptions</button>
-                <button class="button" id="records">see all records</button>
+
+                <button >
+                    <div>see patient general info </div> 
+                    <div><img src="/Suwa-Connect-IS08-UCSC/images/delete.png" alt=""></div>
+                </button>
                 
-              
+                <button >
+                    <div>add new record </div> 
+                    <div><img src="/Suwa-Connect-IS08-UCSC/images/delete.png" alt=""></div>
+                </button>
             </div>
+
+
+
+
+
            
         </div>
 
-        <div class="general-info">
-
-            <div class="container">
-
-                <div class="item">
-                    <div class="label"><p>blood group:</p></div>
-                    <div class="field"><p>AB+</p></div>
-                </div>
-
-                <div class="item">
-                    <div class="label"><p>height:</p></div>
-                    <div class="field"><p>5.6</p></div>
-                </div>
-
-                <div class="item">
-                    <div class="label"><p>weight:</p></div>
-                    <div class="field"><p>84KG</p></div>
-                </div>
-
-                <div class="item">
-                    <div class="label"><p>allergies:</p></div>
-                    <div class="field"><p></p></div>
-                </div>
-
-                <div class="item">
-                    <div class="label"><p>surgeries:</p></div>
-                    <div class="field"><p></p></div>
-                </div>
-
-                <div class="item">
-                    <div class="label"><p>Gender:</p></div>
-                    <div class="field"><p>Male</p></div>
-                </div>
-
+        <div class="searchBar">
+            <input type="text" placeholder="Search patient health records...">
+            <button>Search</button>
+            <select id="dropdown" name="options">
                 
+                <option value="option1">all</option>
+                <option value="option2">filter by date</option>
+                <option value="option3">filter by keyword</option>
+                <option value="option4">filter by doctor</option>
+             </select>
+        </div>
 
-            
+        <div class="search-content">
+            <div class="search-item">
+                <div class="date"><p>2021-09-12</p></div>
+                <div class="doctor"><p>Dr. Perera</p></div>
+                <div class="description"><p>diabetes check-up</p></div>
+                <div class="button"><button id="seeMore">see more</button></div>
+                <div class="button"><button id="delete">delete</button></div>
+            </div>
 
-            
             
         </div>
+
+        
 
         
          
