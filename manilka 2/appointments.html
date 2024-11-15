@@ -6,12 +6,12 @@
     <title>appointments</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="appointments.css" />
-    <link rel="stylesheet" href="navbarcssbhagya.css">
+    <link rel="stylesheet" href="./css/appointments.css" />
+    <link rel="stylesheet" href="./css/navbarcssbhagya.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <script src="navbar.js" defer></script>
+ 
 </head>
 <body>
     <div  class="sideBar">
@@ -19,7 +19,7 @@
             <img src="./Images/Suwa-Connect Logo.png" alt="Suwa-Connect Logo">
             <h2>සුව CONNECT</h2>
     
-            <button class="toggle-btn" id="toggleSidebar"> 
+            <button class="toggle-btn" id="toggleSideBar"> 
                 <i class="material-icons-round">chevron_left</i>
             </button>
         </div>
@@ -82,16 +82,32 @@
 
             <div class="appointments">
                 <div class="appointment-card">
-                    <p>date:</p>
-                    <p>24/10/2024</p>
+                    <div><p>24/10/2024</p></div>
+                    <div><p>10:30</p></div>
+                    <div><p>Mr. Udith Perera</p></div>
+                    <div id="confirm-btn"><button>confirm</button></div>
+                    <div><button id="cancel-btn">cancel</button></div>
+                </div>
 
-                    <p>time:</p>
-                    <p>10:30</p>
+                <div class="appointment-card">
+                    <div><p>24/10/2024</p></div>
+                    <div><p>10:30</p></div>
+                    <div><p>Mr. Udith Perera</p></div>
+                    <div id="confirm-btn"><button>confirm</button></div>
+                    <div><button id="cancel-btn">cancel</button></div>
+                </div>
+
+                <div class="appointment-card">
+                    <div><p>24/10/2024</p></div>
+                    <div><p>10:30</p></div>
+                    <div><p>Mr. Udith Perera</p></div>
+                    <div id="confirm-btn"><button>confirm</button></div>
+                    <div><button id="cancel-btn">cancel</button></div>
                 </div>
                 
             
         </div>
     </div>
-
+<script src="./js/navbar.js"></script>
 </body>
 </html>

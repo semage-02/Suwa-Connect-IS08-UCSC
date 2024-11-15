@@ -87,24 +87,11 @@ border-radius: 5px;
 }
 
 
-.initial-description{
-    grid-column: 1/5;
-    grid-row: 2/3;
-    }
 
-    .initial-description input{
-        width: 100%;
-        height: 60px;
-        background-color: rgb(168, 202, 247);
-        border-radius: 5px;
-        border: none;
-       
-    
-    }
 
 .description{
 grid-column: 1/5;
-grid-row: 3/5;
+grid-row: 2/4;
 }
 
 .description input{
@@ -120,7 +107,7 @@ grid-row: 3/5;
 
 .prescription{
 grid-column: 1/5;
-grid-row:5/7;
+grid-row:4/6;
 }
 
 .prescription input{
@@ -134,7 +121,7 @@ grid-row:5/7;
 
 .reports{
 grid-column: 1/5;
-grid-row: 7/9;
+grid-row: 6/8;
 }
 
 .reports input{
@@ -147,13 +134,24 @@ grid-row: 7/9;
 
 .checkups{
 grid-column: 1/5;
-grid-row: 9/10;
+/* grid-row: 9/10; */
 display: flex;
+flex-direction: column;
 }
+
+.checkups-row{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: flex-end;
+    
+}
+
+
 
 .add-record{
 grid-column: 1/5;
-grid-row: 10/11;
+grid-row: 13/14;
 display: flex;
 justify-content: center;
 }

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="navbarcssbhagya.css">
+<link rel="stylesheet" href="./css/navbarcssbhagya.css">
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">

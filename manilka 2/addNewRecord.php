@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add new record</title>
-    <link rel="stylesheet" href="addNewRecord.css" />
-    <link rel="stylesheet" href="navbarcssbhagya.css">
+    <link rel="stylesheet" href="./css/addNewRecord.css" />
+    <!-- <link rel="stylesheet" href="navbarcssbhagya.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
@@ -13,7 +13,8 @@
 </head>
 <body>
 
-    <div  class="sideBar">
+    <?php include 'navbarbhagya.php'; ?>
+    <!-- <div  class="sideBar">
         <div class="logo">
             <img src="./Images/Suwa-Connect Logo.png" alt="Suwa-Connect Logo">
             <h2>සුව CONNECT</h2>
@@ -67,7 +68,7 @@
         <div class="sidebar-footer">
             <button class="btn-user">Login as User</button>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="main-content">
@@ -115,29 +116,64 @@
             </div>
 
             <div class="checkups">
-                <div class="general-info-card">
-                    <label for="">blood pressure level</label>
-                    <input type="text">
-
-                    <label for="">blood sugar level</label>
+                <p>Blood pressure levels</p>
+                <div class="checkups-row">
+                <div>
+                    <label for="">systolic level</label>
                     <input type="text">
                 </div>
-                <div class="general-info-card">
-                    <label for="">weight</label>
+                <div>
+                    <label for="">diastolic level</label>
                     <input type="text">
-
-                    <label for="">cholesterol level</label>
-                    <input type="text">
+                </div>
                 </div>
             </div>
+
+            <div class="checkups">
+                <p>cholesterol levels</p>
+                <div class="checkups-row">
+                <div>
+                    <label for="">LDL level</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">HDL level</label>
+                    <input type="text">
+                </div>
+                </div>
+            </div>
+
+            <div class="checkups">
+                <p>blood sugar levels</p>
+                <div class="checkups-row">
+                <div>
+                    <label for="">fasting</label>
+                    <input type="text">
+                </div>
+              
+                </div>
+            </div>
+
+            <div class="checkups">
+                <div class="checkups-row">
+                    <div>
+                        <label for="">weight</label>
+                        <input type="text">
+                    </div>
+                    
+                </div>
+            </div>
+
+
 
             <div class="add-record">
                 <button>Add Record</button>
             </div>    
 
-        </div>
+        
+    </div>
     </div>
 
-    
+    <script src="./js/navbar.js"></script>
 </body>
 </html>

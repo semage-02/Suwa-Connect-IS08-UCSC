@@ -1,4 +1,4 @@
-document.getElementById("toggleSidebar").addEventListener("click", function () {
+document.getElementById("toggleSideBar").addEventListener("click", function () {
     document.querySelector(".sideBar").classList.toggle("collapsed");
     
     
