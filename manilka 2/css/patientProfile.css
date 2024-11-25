@@ -213,7 +213,7 @@ justify-items: flex-start;
     }
 
  #delete{
-    background-color: red;
+    background-color: rgb(238, 11, 11);
 }
 
 /* .buttons button{

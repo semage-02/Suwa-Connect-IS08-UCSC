@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>homepage</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/doctor_homepage.css" />
@@ -32,17 +32,17 @@
       <div class="grid-container">
 
         <div class="large-card">
-            <div class="item">
+            <div class="item" id="newAppointments">
                 <h3>New appointments</h3>
-                <p class="count">20</p>
+                <p class="count">25</p>
             </div>
 
-            <div class="item">
+            <div class="item" id="oldPatients">
                 <h3>Old patients</h3>
                 <p class="count">20</p>
             </div>
 
-            <div class="item">
+            <div class="item" id="newPatients">
                 <h3>New patients</h3>
                 <p class="count">20</p>
             </div>
@@ -120,11 +120,11 @@
         <div  class="upcoming">
             <div class="title">upcoming events</div>
 
-            <div class="name">john</div>
+            <div class="name">doctor's meet</div>
             <div class="time">8.00 AM</div>
 
-            <div class="name">john</div>
-            <div class="time">8.00 AM</div>
+            <div class="name">interview</div>
+            <div class="time">8.30 AM</div>
 
             <div class="name">john</div>
             <div class="time">8.00 AM</div>

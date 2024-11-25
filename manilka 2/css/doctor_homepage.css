@@ -52,6 +52,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
+    border-radius: 8px;
 
 }
 
@@ -59,8 +60,9 @@ body{
     grid-column: span 2;
     text-align: center;
     font-weight: 800;
-    background-color: bisque;
+    /* background-color: bisque; */
     padding: 10px;
+    border-radius: 8px;
 }
 
 .name{
@@ -77,19 +79,22 @@ padding: 10px;
 
 .consultations{
     grid-row: span 2;
-    background-color: rgb(91, 105, 105); 
+    background-color: #9bc8f6; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
+    border-radius: 8px;
 }
 
 .upcoming{
-  background-color: rgb(91, 105, 105); 
+  background-color: #2f528c; 
     /* grid-row: span 2; */
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
-
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
 }
 
  .sideBar.collapsed + .main-content{
@@ -99,14 +104,29 @@ padding: 10px;
     overflow-y: auto;
 }
 
+#newAppointments{
+    background-color:#2f528c ;
+}
+
 .item{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: rgb(114, 114, 119);
+    color: white;
     text-align: center;
-}   
+    border-radius: 8px;
+} 
+
+
+
+#newPatients{
+    background-color: #f5adc0;
+}
+
+#oldPatients{
+    background-color: #9bc8f6;
+}
 
 .item p{
     font-size: 35px;
